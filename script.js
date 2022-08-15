@@ -6,7 +6,8 @@ function populateContainer(size){
     container.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
     container.style.gridTemplateRows = `repeat(${size} , 1fr)`;
 
-    // this will populate the main div with 16x16 divs
+    // this will populate the main div with with the selected amount of divs
+
     let amount = size * size
     for (let i = 0; i < amount; i++){
         let square = document.createElement("div");
@@ -23,5 +24,9 @@ function populateContainer(size){
 populateContainer(16);
 
 function changeSize(input){
-    populateContainer(input);
+    if (input >= 2 && input <= 100){
+        populateContainer(input);
+    } else {
+        console.log("Too many sqaurs");
+    }
 }

@@ -1,3 +1,6 @@
+
+let setSize = document.querySelector('button');
+
 function populateContainer(size){
     let container = document.querySelector(".container");
     let squares = container.querySelectorAll('div');
@@ -23,10 +26,15 @@ function populateContainer(size){
 
 populateContainer(16);
 
-function changeSize(input){
+setSize.addEventListener('click', () => {
+    const userSize = prompt("What dimensions do you want for the new Grid?");
+    populateContainer(userSize);
+})
+
+/*function changeSize(input){
     if (input >= 2 && input <= 100){
         populateContainer(input);
     } else {
         console.log("Too many sqaurs");
     }
-}
+}*/

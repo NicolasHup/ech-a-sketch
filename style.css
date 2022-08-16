@@ -1,6 +1,19 @@
+
 .container{
   width: 400px;
   height: 400px;
   display: grid;
   border-style: solid 1px rgb(167, 162, 162);
+}
+
+button {
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 25px;
 }

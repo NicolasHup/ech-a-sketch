@@ -5,7 +5,6 @@ function populateContainer(size){
     let container = document.querySelector(".container");
     let squares = container.querySelectorAll('div');
     squares.forEach((div)=> div.remove());
-    container.style.border = "solid 1px rgb(167, 162, 162)";
     container.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
     container.style.gridTemplateRows = `repeat(${size} , 1fr)`;
 

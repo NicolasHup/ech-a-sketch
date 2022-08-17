@@ -15,7 +15,7 @@ function populateContainer(size){
         let square = document.createElement("div");
         square.style.border = "solid 1px rgb(167, 162, 162)";
 
-        //changes the color of the box when hover over the grid
+        //changes the color<RANDOMLY> of the box when hover over the grid
         square.addEventListener('mouseenter', () =>{
             let R = Math.floor(Math.random() * 255);
             let G = Math.floor(Math.random() * 255);

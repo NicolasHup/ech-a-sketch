@@ -29,10 +29,10 @@ function populateContainer(size){
 populateContainer(16);
 
 setSize.addEventListener('click', () => {
-    let userSize = Number(prompt("What dimensions do you want for the new Grid?"));
+    let userSize = Number(prompt("What dimensions do you want for the new Grid?",16));
 
   while (userSize > 100){
-    userSize = Number(prompt("Pick a smaller number and make sure is 100 or less."));
+    userSize = Number(prompt("Pick a smaller number and make sure is 100 or less.",16));
   }  
   populateContainer(userSize);
 })

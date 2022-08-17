@@ -1,5 +1,6 @@
 
-let setSize = document.querySelector('button');
+let setSize = document.querySelector('.btnSet');
+let clearBtn = document.querySelector('.btnClear');
 
 function populateContainer(size){
     let container = document.querySelector(".container");
@@ -35,6 +36,10 @@ setSize.addEventListener('click', () => {
     userSize = Number(prompt("Pick a smaller number and make sure is 100 or less.",16));
   }  
   populateContainer(userSize);
+})
+
+clearBtn.addEventListener('click', () => {
+    populateContainer(16);
 })
 
 /*function changeSize(input){
